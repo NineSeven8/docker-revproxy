@@ -4,9 +4,9 @@ I created this docker compose as an example of how to run two nginx containers b
 
 ## Description:
 
-**ns8-app1** is the first docker container with an example index.html on /var/www/app
-**ns8-app2** is the second docker container, same as the first one, but with a different index.html for better understanding.
-**revproxy** is the reverse proxy container that proxy passes to both app servers
+ - **ns8-app1** is the first docker container with an example index.html on /var/www/app
+ - **ns8-app2** is the second docker container, same as the first one, but with a different index.html for better understanding.
+ - **revproxy** is the reverse proxy container that proxy passes to both app servers
 
 ## Usage:
 
