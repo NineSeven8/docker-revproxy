@@ -29,7 +29,7 @@ To start and stop the containers just run
 or
 
     docker compose start
-If at any point you change the docker files you will need to build the images again.
+If at any point you change the *Dockerfiles* you will need to build the images again.
 
     docker compose build
 
