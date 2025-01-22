@@ -5,13 +5,14 @@ services:
     ports:
       - "3001:80"
     container_name: ns8-app1
+    restart: unless-stopped
   app2:
     build:
       context: ./app2
     ports:
       - "3002:80"
     container_name: ns8-app2
-
+    restart: unless-stopped
   nginx:
     image: nginx:latest
     ports:
@@ -22,3 +23,4 @@ services:
       - app1
       - app2
     container_name: revproxy
+    restart: unless-stopped
